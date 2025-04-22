@@ -1,0 +1,48 @@
+.gameBoard {
+  text-align: center;
+  margin: 20px;
+  max-width: 385px; /* Limit the maximum width */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Equal distribution of columns */
+  gap: 5px; /* Space between squares */
+  width: 100%; /* Full width of the parent */
+}
+
+.gridCell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ccc; /* Light gray border for cells */
+  word-wrap: break-word; /* Enable word wrapping */
+  padding: 10px; /* Padding for text */
+  font-size: 0.9em; /* Increased font size for better readability */
+  min-height: 70px; /* Minimum height */
+  background-color: #f8f8f8; /* Light background for cells */
+  color: #333; /* Darker text color for contrast */
+  font-weight: bold; /* Bold font for better visibility */
+}
+
+.selected {
+  background-color: #4CAF50; /* Green background for selected cells */
+  color: white; /* White text for better contrast on selection */
+}
+
+.notSelected {
+  background-color: #f8f8f8; /* Light background for unselected cells */
+  color: #333; /* Consistent text color */
+}
+
+.resetButton {
+  margin-top: 20px;
+  background-color: #007bff; /* Bootstrap primary color for the button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
